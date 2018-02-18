@@ -165,7 +165,7 @@ for event,element in ET.iterparse(XMLLOC,events=("start","end")):
 			f = open(s,"w")
 			file_index[i]+=1
 			for v in sorted(DOC[i]):
-				s = v + ":r"
+				s = v + ":"
 				for u in DOC[i][v]:
 					s += u + ":"	
 				print(s,file=f)
